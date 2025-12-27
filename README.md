@@ -1,74 +1,193 @@
-# Welcome to your Lovable project
+# جـوالي أعـمال | Jawali Business Wallet
 
-## Project info
+نظام محفظة تجارية احترافي للشركات والمؤسسات. يوفر تحويلات فورية، تقارير مالية متقدمة، وإدارة مالية ذكية.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+A professional business wallet system for companies and institutions. Provides instant transfers, advanced financial reports, and smart financial management.
 
-## How can I edit this code?
+## 🚀 Features
 
-There are several ways of editing your application.
+### Core Features
+- 💰 **Balance Management** - Real-time balance tracking with incoming/outgoing transactions
+- 🔄 **Money Transfers** - Individual and bulk transfer capabilities
+- 📊 **Financial Reports** - Comprehensive financial analytics and charts
+- ⚙️ **Settings Management** - User and system configuration
+- 📱 **Responsive Design** - Fully responsive UI for all devices
+- 🌙 **Dark Mode Support** - Built-in dark mode support
 
-**Use Lovable**
+### Pages
+- **Dashboard** - Overview of balance, transactions, and financial activity
+- **Transfers** - Transfer management and history
+- **Individual Transfer** - Single transfer interface
+- **Bulk Transfer** - Multiple transfers at once
+- **Reports** - Financial reports and analytics
+- **Settings** - System and user settings
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+## 🛠️ Tech Stack
 
-Changes made via Lovable will be committed automatically to this repo.
+### Frontend
+- **Vue 3** - Progressive JavaScript framework
+- **TypeScript** - Type-safe development
+- **Vite** - Next-generation frontend tooling
+- **Vue Router** - Official router for Vue.js
+- **TanStack Vue Query** - Powerful data synchronization for Vue
 
-**Use your preferred IDE**
+### UI & Styling
+- **Tailwind CSS** - Utility-first CSS framework
+- **Shadcn UI (Vue)** - Beautiful component library
+- **Lucide Vue Next** - Icon library
+- **ApexCharts** - Modern charting library
+- **Vue Sonner** - Toast notifications
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+### Development Tools
+- **ESLint** - Code linting
+- **TypeScript ESLint** - TypeScript-specific linting rules
+- **Vue TSC** - TypeScript checking for Vue files
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## 📦 Installation
 
-Follow these steps:
+### Prerequisites
+- Node.js 18+ 
+- npm or yarn
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+### Setup
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+1. Clone the repository
+```bash
+git clone <repository-url>
+cd jawali-business-wallet-main
+```
 
-# Step 3: Install the necessary dependencies.
-npm i
+2. Install dependencies
+```bash
+npm install
+```
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+3. Start development server
+```bash
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+The application will be available at `http://localhost:5333`
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## 🏗️ Project Structure
 
-**Use GitHub Codespaces**
+```
+src/
+├── components/          # Vue components
+│   ├── dashboard/      # Dashboard components
+│   ├── layout/         # Layout components (Header, AppLayout)
+│   └── ui/             # UI components (Shadcn Vue)
+├── hooks/              # Vue composables
+├── pages/              # Page components
+├── router/             # Vue Router configuration
+├── lib/                # Utility functions
+├── types/              # TypeScript type definitions
+├── App.vue             # Root component
+└── main.ts             # Application entry point
+```
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## 📝 Available Scripts
 
-## What technologies are used for this project?
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run build:dev` - Build for development
+- `npm run preview` - Preview production build
+- `npm run lint` - Run ESLint
 
-This project is built with:
+## 🎨 UI Components
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+The project uses a comprehensive set of UI components based on Shadcn UI:
 
-## How can I deploy this project?
+- **Forms**: Input, Label, Textarea, Select, Checkbox, Switch, Radio Group
+- **Layout**: Card, Separator, Sheet, Dialog, Popover
+- **Navigation**: Breadcrumb, Tabs, Pagination
+- **Feedback**: Alert, Toast, Progress, Skeleton
+- **Data Display**: Table, Badge, Avatar
+- **Charts**: Activity Chart (ApexCharts)
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+## 🔧 Configuration
 
-## Can I connect a custom domain to my Lovable project?
+### Vite Configuration
+- Server runs on port `5333`
+- Path alias `@` points to `./src`
+- Vue plugin configured for SFC support
 
-Yes, you can!
+### Tailwind Configuration
+- Custom color scheme with CSS variables
+- RTL (Right-to-Left) support for Arabic
+- Custom animations and utilities
+- Cairo font family integration
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+## 🌐 Internationalization
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
-# jawali-business-wallet
+The application is designed with Arabic (RTL) support:
+- RTL layout support
+- Arabic typography (Cairo font)
+- Arabic number formatting
+- RTL-optimized UI components
+
+## 📱 Responsive Design
+
+The application is fully responsive with breakpoints:
+- **Mobile**: < 640px
+- **Tablet**: 640px - 1024px
+- **Desktop**: 1024px - 1280px
+- **Large Desktop**: > 1280px
+
+## 🔐 Features in Detail
+
+### Dashboard
+- Real-time balance display
+- Quick action buttons
+- Financial activity chart
+- Recent transactions list
+
+### Transfers
+- Individual transfer form
+- Bulk transfer capability
+- Transfer history
+- Transaction filtering
+
+### Reports
+- Financial analytics
+- Transaction reports
+- Export capabilities
+- Date range filtering
+
+### Settings
+- User management
+- System preferences
+- Notification settings
+- Security options
+
+## 🚧 Development
+
+### Adding New Components
+1. Create component in appropriate directory
+2. Use TypeScript for type safety
+3. Follow Vue 3 Composition API patterns
+4. Use Tailwind CSS for styling
+5. Ensure RTL support for Arabic text
+
+### Code Style
+- Use TypeScript strict mode
+- Follow Vue 3 best practices
+- Use Composition API with `<script setup>`
+- Follow ESLint rules
+
+## 📄 License
+
+This project is private and proprietary.
+
+## 👥 Contributors
+
+- Jawali Business Team
+
+## 📞 Support
+
+For support and inquiries, please contact the development team.
+
+---
+
+**Built with ❤️ using Vue 3 + TypeScript + Tailwind CSS**
+
